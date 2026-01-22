@@ -1,0 +1,37 @@
+speakeasyVersion: 1.693.0
+sources:
+    example-api:
+        sourceNamespace: example-api
+        sourceRevisionDigest: sha256:b1d28a912ce014afe664312aac9cf0c9f29684009993eab4a7cfbe30e8b9feb5
+        sourceBlobDigest: sha256:2aabb8b8ab1374d852b230617f93a0e27e0a41e3fdc7dafbe3d4cdc33cf81b62
+        tags:
+            - latest
+            - test-version-bump
+targets:
+    typescript:
+        source: example-api
+        sourceNamespace: example-api
+        sourceRevisionDigest: sha256:b1d28a912ce014afe664312aac9cf0c9f29684009993eab4a7cfbe30e8b9feb5
+        sourceBlobDigest: sha256:2aabb8b8ab1374d852b230617f93a0e27e0a41e3fdc7dafbe3d4cdc33cf81b62
+        codeSamplesNamespace: example-api-typescript-code-samples
+        codeSamplesRevisionDigest: sha256:4557191e10f6eeb44295b388603921fee467e6845cc1080dc71e39385a242544
+workflow:
+    workflowVersion: 1.0.0
+    speakeasyVersion: latest
+    sources:
+        example-api:
+            inputs:
+                - location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api@$TAG
+            registry:
+                location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api
+    targets:
+        typescript:
+            target: typescript
+            source: example-api
+            output: .
+            codeSamples:
+                registry:
+                    location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api-typescript-code-samples
+                labelOverride:
+                    fixedValue: Typescript (SDK)
+                blocking: false

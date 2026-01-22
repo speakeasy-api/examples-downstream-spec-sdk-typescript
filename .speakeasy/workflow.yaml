@@ -3,9 +3,9 @@ speakeasyVersion: latest
 sources:
   example-api:
     inputs:
-      - location: registry.speakeasy.com/speakeasy-self/speakeasy-self/example-api@$TAG
+      - location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api@$TAG
     registry:
-      location: registry.speakeasy.com/speakeasy-self/speakeasy-self/example-api
+      location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api
 targets:
   typescript:
     target: typescript

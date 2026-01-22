@@ -1,0 +1,13 @@
+workflowVersion: 1.0.0
+speakeasyVersion: latest
+sources:
+  example-api:
+    inputs:
+      - location: registry.speakeasy.com/speakeasy-self/speakeasy-self/example-api@$TAG
+    registry:
+      location: registry.speakeasy.com/speakeasy-self/speakeasy-self/example-api
+targets:
+  typescript:
+    target: typescript
+    source: example-api
+    output: .

@@ -3,7 +3,7 @@ speakeasyVersion: latest
 sources:
     example-api:
         inputs:
-            - location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api@$TAG
+            - location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api:${TAG:-latest}
         registry:
             location: registry.speakeasyapi.dev/speakeasy-self/speakeasy-self/example-api
 targets:
